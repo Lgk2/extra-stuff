@@ -1,0 +1,12 @@
+﻿#English US Language file for Extra Stuff Mod
+
+#Creative Tab
+itemGroup.extrastuff=Extra Stuff
+
+#Items
+item.resonating_diamond.name=Resonating Diamond
+
+#Blocks
+tile.hardened_machine_frame.name=Machine Frame (Hardened)
+tile.reinforced_machine_frame.name=§eMachine Frame (Reinforced)§r
+tile.resonant_machine_frame.name=§bMachine Frame (Resonant)§r
