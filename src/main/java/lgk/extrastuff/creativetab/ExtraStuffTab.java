@@ -17,7 +17,7 @@ public class ExtraStuffTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return ModItems.resonating_diamond;
+        return ModItems.items;
     }
 
     @Override

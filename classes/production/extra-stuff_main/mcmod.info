@@ -1,0 +1,16 @@
+[
+{
+  "modid": "extrastuff",
+  "name": "Extra Blocks",
+  "description": "Adds extra blocks and items.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Lgk"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

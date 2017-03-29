@@ -24,7 +24,7 @@ public class BlockBase extends Block {
     }
 
     public void registerItemModel(ItemBlock itemBlock) {
-        ExtraStuff.proxy.registerItemRenderer(itemBlock, 0, name);
+        ExtraStuff.proxy.registerItemMetadataRenderer(itemBlock, 0, name);
     }
 
     @Override

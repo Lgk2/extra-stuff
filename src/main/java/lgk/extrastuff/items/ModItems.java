@@ -1,6 +1,7 @@
 package lgk.extrastuff.items;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
@@ -9,20 +10,18 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class ModItems {
 
-    public static ItemBase resonating_diamond;
+    public static ItemMetadata items;
 
     public static void init() {
-        resonating_diamond = register(new ItemBase("resonating_diamond"));
+        items = register(new ItemMetadata("items"));
     }
 
     private static <T extends Item> T register(T item) {
         GameRegistry.register(item);
-
-        if (item instanceof ItemBase) {
-            ((ItemBase) item).registerItemModel();
+        if (item instanceof ItemMetadata) {
+            ((ItemMetadata) item).registerItemModel();
+            ((ItemMetadata) item).registerBakeryVariants();
         }
-
         return item;
     }
-
 }
