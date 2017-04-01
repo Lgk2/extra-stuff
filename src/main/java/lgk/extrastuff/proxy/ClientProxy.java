@@ -1,12 +1,10 @@
 package lgk.extrastuff.proxy;
 
-import lgk.extrastuff.ExtraStuff;
 import lgk.extrastuff.Reference;
-import lgk.extrastuff.handler.EnumHandler;
-import lgk.extrastuff.items.ModItems;
-import net.minecraft.client.renderer.block.model.ModelBakery;
+import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 
@@ -21,7 +19,18 @@ public class ClientProxy extends  CommonProxy {
     }
 
     @Override
+    public void registerItemBlockMetadataRenderer(ItemBlock itemBlock, int meta, String fileName) {
+        ModelLoader.setCustomModelResourceLocation(itemBlock, meta, new ModelResourceLocation(new ResourceLocation(Reference.MODID, fileName), "inventory"));
+    }
+
+    @Override
+    public void registerBlockMetadataRenderer(Block block, int meta, String fileName) {
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), meta, new ModelResourceLocation(new ResourceLocation(Reference.MODID, fileName), "inventory"));
+    }
+
+    @Override
     public void registerModelBakeryVariants(Item item, String name) {
+        new ResourceLocation(Reference.MODID, "item");
     }
 }
 

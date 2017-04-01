@@ -1,5 +1,6 @@
 package lgk.extrastuff.blocks;
 
+import lgk.extrastuff.blocks.Item.ItemBlockMetadataBase;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -9,31 +10,25 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 public class ModBlocks {
 
-    public static BlockBase hardened_machine_frame;
-    public static BlockBase reinforced_machine_frame;
-    public static BlockBase resonant_machine_frame;
+    public static BlockMetadataBase blocks;
 
     public static void init() {
-        hardened_machine_frame = register(new BlockBasic("hardened_machine_frame"));
-        reinforced_machine_frame = register(new BlockBasic("reinforced_machine_frame"));
-        resonant_machine_frame = register(new BlockBasic("resonant_machine_frame"));
-
+        blocks = register(new BlockMetadataBase("blocks"));
     }
 
     private static <T extends Block> T register(T block, ItemBlock itemBlock) {
         GameRegistry.register(block);
         GameRegistry.register(itemBlock);
 
-        if (block instanceof BlockBase) {
-            ((BlockBase)block).registerItemModel(itemBlock);
+    if (block instanceof BlockMetadataBase) {
+            ((BlockMetadataBase)block).registerItemModel(itemBlock);
+            ((BlockMetadataBase)block).registerBakeryVariants();
         }
-
         return block;
     }
 
     private static <T extends Block> T register(T block) {
-        ItemBlock itemBlock = new ItemBlock(block);
-        itemBlock.setRegistryName(block.getRegistryName());
+        ItemBlock itemBlock = new ItemBlockMetadataBase(block);
         return register(block, itemBlock);
     }
 

@@ -4,12 +4,12 @@
 itemGroup.extrastuff=Extra Stuff
 
 #Items
-item.resonating_diamond.name=Resonating Diamond
-item.items.resonating_diamond.name=Resonating Diamond
-item.items.resonating_emerald.name=Resonating Emerald
-item.items.resonating_lapis.name=Resonating Lapis
+item.items.resonating_diamond.name=§6Resonating Diamond§r
+item.items.redstone_storage_cell.name=§4Redstone Storage Cell§r
+item.items.redstone_storage_cell_empty.name=Redstone Storage Cell (Empty)
+item.items.manasteel_plate.name=Manasteel Plate
 
 #Blocks
-tile.hardened_machine_frame.name=Machine Frame (Hardened)
-tile.reinforced_machine_frame.name=§eMachine Frame (Reinforced)§r
-tile.resonant_machine_frame.name=§bMachine Frame (Resonant)§r
+tile.blocks.hardened_machine_frame.name=Machine Frame (Hardened)
+tile.blocks.reinforced_machine_frame.name=§eMachine Frame (Reinforced)§r
+tile.blocks.resonant_machine_frame.name=§bMachine Frame (Resonant)§r

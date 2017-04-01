@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=hardened_machine_frame": {
+      "model": "extrastuff:hardened_machine_frame"
+    },
+    "type=reinforced_machine_frame": {
+      "model": "extrastuff:reinforced_machine_frame"
+    },
+    "type=resonant_machine_frame": {
+      "model": "extrastuff:resonant_machine_frame"
+    }
+  }
+}

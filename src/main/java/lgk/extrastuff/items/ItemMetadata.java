@@ -1,7 +1,7 @@
 package lgk.extrastuff.items;
 
 import lgk.extrastuff.ExtraStuff;
-import lgk.extrastuff.handler.EnumHandler;
+import lgk.extrastuff.handler.ItemEnumHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -24,36 +24,35 @@ public class ItemMetadata extends Item {
     }
 
     public void registerItemModel() {
-        for (int i = 0; i < EnumHandler.ItemMetadata.values().length; i++) {
-            ExtraStuff.proxy.registerItemMetadataRenderer(this, i, "" + EnumHandler.ItemMetadata.values()[i].getName());
+        for (int i = 0; i < ItemEnumHandler.ItemMetadata.values().length; i++) {
+            ExtraStuff.proxy.registerItemMetadataRenderer(this, i, "" + ItemEnumHandler.ItemMetadata.values()[i].getName());
         }
     }
 
     public void registerBakeryVariants() {
-        for (int i = 0; i < EnumHandler.ItemMetadata.values().length; i++) {
+        for (int i = 0; i < ItemEnumHandler.ItemMetadata.values().length; i++) {
             ExtraStuff.proxy.registerModelBakeryVariants(this, name);
             }
     }
 
-
      @Override
      public void getSubItems(Item item, CreativeTabs tab, List<ItemStack> items) {
-        for(int i = 0; i < EnumHandler.ItemMetadata.values().length; i++) {
+        for(int i = 0; i < ItemEnumHandler.ItemMetadata.values().length; i++) {
             items.add(new ItemStack(item, 1, i));
         }
      }
 
-    @Override
-    public String getUnlocalizedName(ItemStack stack) {
-        for(int i = 0; i < EnumHandler.ItemMetadata.values().length; i++) {
+     @Override
+     public String getUnlocalizedName(ItemStack stack) {
+        for(int i = 0; i < ItemEnumHandler.ItemMetadata.values().length; i++) {
             if(stack.getItemDamage() == i) {
-                return this.getUnlocalizedName() + "." + EnumHandler.ItemMetadata.values()[i].getName();
+                return this.getUnlocalizedName() + "." + ItemEnumHandler.ItemMetadata.values()[i].getName();
             }
             else {
                 continue;
             }
         }
-        return this.getUnlocalizedName() + "." + EnumHandler.ItemMetadata.A.getName();
+        return this.getUnlocalizedName() + "." + ItemEnumHandler.ItemMetadata.A.getName();
     }
 
     @Override
@@ -61,8 +60,4 @@ public class ItemMetadata extends Item {
         super.setCreativeTab(tab);
         return this;
     }
-
-
-
-
 }
