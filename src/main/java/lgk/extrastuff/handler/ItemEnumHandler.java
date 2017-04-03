@@ -12,7 +12,10 @@ public class ItemEnumHandler {
         B("redstone_storage_cell_empty", 1),
         C("redstone_storage_cell", 2),
         D("manasteel_plate", 3),
-        E("resonating_diamond_dust", 4);
+        E("resonating_diamond_dust", 4),
+        F("redstone_compound", 5),
+        G("redstone_powered_ingot", 6),
+        H("resonating_ender_pearl", 7);
 
         private int ID;
         public String name;

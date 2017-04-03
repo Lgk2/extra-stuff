@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "extrastuff:blocks/resonating_diamond_block_compressed"
+    }
+}

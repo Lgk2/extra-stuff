@@ -12,7 +12,9 @@ public class BlockEnumHandler {
     public enum BlockMetadata implements IStringSerializable {
         A("hardened_machine_frame", 0),
         B("reinforced_machine_frame", 1),
-        C("resonant_machine_frame", 2);
+        C("resonant_machine_frame", 2),
+        D("resonating_diamond_block", 3),
+        E("resonating_diamond_block_compressed", 4);
 
         private int ID;
         public String name;

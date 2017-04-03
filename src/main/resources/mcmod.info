@@ -1,7 +1,7 @@
 [
 {
   "modid": "extrastuff",
-  "name": "Extra Blocks",
+  "name": "Extra Stuff",
   "description": "Adds extra blocks and items.",
   "version": "${version}",
   "mcversion": "${mcversion}",
