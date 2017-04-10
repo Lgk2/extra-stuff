@@ -5,14 +5,20 @@ itemGroup.extrastuff=Extra Stuff
 
 #Items
 item.items.resonating_diamond.name=§6Resonating Diamond§r
-item.items.redstone_storage_cell.name=§4Redstone Storage Cell§r
-item.items.redstone_storage_cell_empty.name=Redstone Storage Cell (Empty)
-item.items.manasteel_plate.name=§bManasteel Plate§r
 item.items.resonating_diamond_dust.name=§6Resonating Diamond Dust§r
+item.items.resonating_ender_pearl.name=§6Resonating Ender Pearl§r
+item.items.resonating_ender_dust.name=§6Resonating Ender Dust§r
+item.items.redstone_storage_cell_empty.name=Redstone Storage Cell (Empty)
+item.items.redstone_storage_cell.name=§4Redstone Storage Cell§r
 item.items.redstone_compound.name=Redstone Compound
 item.items.redstone_powered_ingot.name=Redstone Powered Ingot
-item.items.resonating_ender_pearl.name=§6Resonating Ender Pearl§r
-
+item.items.manasteel_plate.name=§bManasteel Plate§r
+item.items.terrasteel_plate.name=§2Terrasteel Plate§r
+item.items.elementium_plate.name=§5Elementium Plate§r
+item.items.manasteel_dust.name=§bManasteel Dust§r
+item.items.terrasteel_dust.name=§2Terrasteel Dust§r
+item.items.elementium_dust.name=§5Elementium Dust§r
+item.items.ingot_of_the_void.name=Ingot of the Void
 
 #Blocks
 tile.blocks.hardened_machine_frame.name=§eMachine Frame (Hardened)§r
@@ -20,3 +26,4 @@ tile.blocks.reinforced_machine_frame.name=§cMachine Frame (Reinforced)§r
 tile.blocks.resonant_machine_frame.name=§bMachine Frame (Resonant)§r
 tile.blocks.resonating_diamond_block.name=§6Resonating Diamond Block§r
 tile.blocks.resonating_diamond_block_compressed.name=§6Compressed Resonating Diamond Block§r
+tile.blocks.block_of_the_void.name=Block of the Void

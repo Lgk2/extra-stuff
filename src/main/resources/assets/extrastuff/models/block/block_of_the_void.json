@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "extrastuff:blocks/block_of_the_void"
+    }
+}

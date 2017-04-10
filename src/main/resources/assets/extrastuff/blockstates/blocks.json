@@ -14,6 +14,9 @@
     },
     "type=resonating_diamond_block_compressed": {
       "model": "extrastuff:resonating_diamond_block_compressed"
+    },
+    "type=block_of_the_void": {
+      "model": "extrastuff:block_of_the_void"
     }
   }
 }
