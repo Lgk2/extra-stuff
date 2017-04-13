@@ -1,13 +1,24 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cube_all",
+    "transform": "forge:default-block"
+  },
   "variants": {
-    "type=hardened_machine_frame": {
-      "model": "extrastuff:hardened_machine_frame"
+    "type=reinforced_machine_frame": {
+      "textures": {
+        "all": "extrastuff:blocks/machine_frame/hardened_machine_frame"
+      }
     },
     "type=reinforced_machine_frame": {
-      "model": "extrastuff:reinforced_machine_frame"
+      "textures": {
+        "all": "extrastuff:blocks/machine_frame/reinforced_machine_frame"
+      }
     },
     "type=resonant_machine_frame": {
-      "model": "extrastuff:resonant_machine_frame"
+      "textures": {
+        "all": "extrastuff:blocks/machine_frame/resonant_machine_frame"
+      }
     },
     "type=resonating_diamond_block": {
       "model": "extrastuff:resonating_diamond_block"
