@@ -14,10 +14,6 @@ public class CommonProxy {
     public void registerItemBlockMetadataRenderer(ItemBlock itemBlock, int meta, String fileName) {
     }
 
-    public void registerCustomBlockStateLocation(Block block, String resourceLocation) {
-
-    }
-
     public void registerModelBakeryVariants(Item item, String name) {
     }
 
